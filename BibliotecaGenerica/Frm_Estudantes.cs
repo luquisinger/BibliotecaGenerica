@@ -16,5 +16,17 @@ namespace BibliotecaGenerica
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Frm_Principal main = new Frm_Principal();
+            main.Show();
+        }
     }
 }

@@ -86,7 +86,7 @@
             // 
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
+            button8.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button8.Location = new Point(620, 0);
             button8.Name = "button8";
             button8.Size = new Size(280, 61);
@@ -98,7 +98,7 @@
             // 
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
+            button7.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button7.Location = new Point(326, 0);
             button7.Name = "button7";
             button7.Size = new Size(288, 61);
@@ -110,7 +110,7 @@
             // 
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
+            button6.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button6.Location = new Point(0, 0);
             button6.Name = "button6";
             button6.Size = new Size(320, 61);
@@ -123,7 +123,7 @@
             panel3.BackgroundImage = Properties.Resources.abundante_coleccion_libros_antiguos_estantes_madera_generados_ia;
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
             panel3.Dock = DockStyle.Bottom;
-            panel3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            panel3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             panel3.Location = new Point(0, 67);
             panel3.Name = "panel3";
             panel3.Size = new Size(900, 322);
@@ -132,7 +132,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(84, 31);
             label1.Name = "label1";
@@ -144,7 +144,7 @@
             // 
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ButtonFace;
             button1.Location = new Point(326, 34);
             button1.Name = "button1";
@@ -152,12 +152,13 @@
             button1.TabIndex = 4;
             button1.Text = "Estudantes";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ButtonFace;
             button2.Location = new Point(435, 34);
             button2.Name = "button2";
@@ -170,7 +171,7 @@
             // 
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = SystemColors.ButtonFace;
             button3.Location = new Point(493, 34);
             button3.Name = "button3";
@@ -183,7 +184,7 @@
             // 
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = SystemColors.ButtonFace;
             button4.Location = new Point(620, 34);
             button4.Name = "button4";
@@ -196,7 +197,7 @@
             // 
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = SystemColors.ButtonFace;
             button5.Location = new Point(767, 34);
             button5.Name = "button5";

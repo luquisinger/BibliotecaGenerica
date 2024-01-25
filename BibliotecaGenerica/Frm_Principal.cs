@@ -21,5 +21,12 @@ namespace BibliotecaGenerica
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Frm_Estudantes student = new Frm_Estudantes();
+            student.Show();
+            this.Hide();
+        }
     }
 }

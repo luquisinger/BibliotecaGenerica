@@ -28,21 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
+            materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             label2 = new Label();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
-            guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
-            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             label3 = new Label();
             label4 = new Label();
             panel1.SuspendLayout();
@@ -50,10 +41,10 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(materialRaisedButton1);
+            panel1.Controls.Add(materialSingleLineTextField2);
+            panel1.Controls.Add(materialSingleLineTextField1);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(guna2Button1);
-            panel1.Controls.Add(guna2TextBox2);
-            panel1.Controls.Add(guna2TextBox1);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -61,95 +52,84 @@
             panel1.Size = new Size(261, 329);
             panel1.TabIndex = 0;
             // 
+            // materialRaisedButton1
+            // 
+            materialRaisedButton1.AutoSize = true;
+            materialRaisedButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialRaisedButton1.Depth = 0;
+            materialRaisedButton1.Icon = null;
+            materialRaisedButton1.Location = new Point(95, 190);
+            materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialRaisedButton1.Name = "materialRaisedButton1";
+            materialRaisedButton1.Primary = true;
+            materialRaisedButton1.Size = new Size(73, 36);
+            materialRaisedButton1.TabIndex = 7;
+            materialRaisedButton1.Text = "Entrar";
+            materialRaisedButton1.UseVisualStyleBackColor = true;
+            // 
+            // materialSingleLineTextField2
+            // 
+            materialSingleLineTextField2.Depth = 0;
+            materialSingleLineTextField2.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            materialSingleLineTextField2.Hint = "";
+            materialSingleLineTextField2.Location = new Point(46, 149);
+            materialSingleLineTextField2.MaxLength = 32767;
+            materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
+            materialSingleLineTextField2.Name = "materialSingleLineTextField2";
+            materialSingleLineTextField2.PasswordChar = '\0';
+            materialSingleLineTextField2.SelectedText = "";
+            materialSingleLineTextField2.SelectionLength = 0;
+            materialSingleLineTextField2.SelectionStart = 0;
+            materialSingleLineTextField2.Size = new Size(165, 23);
+            materialSingleLineTextField2.TabIndex = 6;
+            materialSingleLineTextField2.TabStop = false;
+            materialSingleLineTextField2.Text = "Senha";
+            materialSingleLineTextField2.UseSystemPasswordChar = false;
+            // 
+            // materialSingleLineTextField1
+            // 
+            materialSingleLineTextField1.Depth = 0;
+            materialSingleLineTextField1.Font = new Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point);
+            materialSingleLineTextField1.Hint = "";
+            materialSingleLineTextField1.Location = new Point(46, 108);
+            materialSingleLineTextField1.MaxLength = 32767;
+            materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialSingleLineTextField1.Name = "materialSingleLineTextField1";
+            materialSingleLineTextField1.PasswordChar = '\0';
+            materialSingleLineTextField1.SelectedText = "";
+            materialSingleLineTextField1.SelectionLength = 0;
+            materialSingleLineTextField1.SelectionStart = 0;
+            materialSingleLineTextField1.Size = new Size(165, 23);
+            materialSingleLineTextField1.TabIndex = 5;
+            materialSingleLineTextField1.TabStop = false;
+            materialSingleLineTextField1.Text = "Usuario";
+            materialSingleLineTextField1.UseSystemPasswordChar = false;
+            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Century Schoolbook", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(102, 250);
+            label2.Font = new Font("Century Schoolbook", 6F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(111, 229);
             label2.Name = "label2";
             label2.Size = new Size(36, 12);
             label2.TabIndex = 4;
             label2.Text = "Limpar";
             // 
-            // guna2Button1
-            // 
-            guna2Button1.CustomizableEdges = customizableEdges1;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(128, 64, 0);
-            guna2Button1.Font = new Font("Gentium Book Basic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(53, 214);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button1.Size = new Size(140, 24);
-            guna2Button1.TabIndex = 3;
-            guna2Button1.Text = "Entrar";
-            guna2Button1.Click += guna2Button1_Click;
-            // 
-            // guna2TextBox2
-            // 
-            guna2TextBox2.CustomizableEdges = customizableEdges3;
-            guna2TextBox2.DefaultText = "Senha";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F);
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(34, 150);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderText = "";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox2.Size = new Size(180, 27);
-            guna2TextBox2.TabIndex = 2;
-            // 
-            // guna2TextBox1
-            // 
-            guna2TextBox1.CustomizableEdges = customizableEdges5;
-            guna2TextBox1.DefaultText = "Usuario";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(34, 96);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox1.Size = new Size(180, 27);
-            guna2TextBox1.TabIndex = 1;
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Schoolbook", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Century Schoolbook", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(78, 46);
             label1.Name = "label1";
             label1.Size = new Size(90, 25);
             label1.TabIndex = 0;
             label1.Text = "LOGIN";
             // 
-            // guna2BorderlessForm1
-            // 
-            guna2BorderlessForm1.ContainerControl = this;
-            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Century Schoolbook", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Century Schoolbook", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
             label3.Location = new Point(295, 96);
             label3.Name = "label3";
@@ -161,7 +141,7 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Century Schoolbook", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Century Schoolbook", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
             label4.Location = new Point(338, 121);
             label4.Name = "label4";
@@ -193,13 +173,11 @@
 
         private Panel panel1;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Label label2;
         private Label label3;
         private Label label4;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
+        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
     }
 }
