@@ -39,7 +39,7 @@
 			Btn_Conectar.TabIndex = 0;
 			Btn_Conectar.Text = "Conectar";
 			Btn_Conectar.UseVisualStyleBackColor = true;
-			Btn_Conectar.Click += this.Btn_Conectar_Click;
+			
 			// 
 			// TestaConexao
 			// 

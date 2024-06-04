@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+using System;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BibliotecaGenerica
 {
 	public class Conexao_SQLSERVER
 	{
-		static void Main(string[] args)
+		public void Conectar()
 		{
 			string connectionString = "Data Source=LUQUISINGER;Initial Catalog=Biblioteca;User Id=Matheus;Password=123456";
 
