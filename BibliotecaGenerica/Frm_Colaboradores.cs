@@ -141,13 +141,20 @@ namespace BibliotecaGenerica
 			else
 			{
 				Con.Open();
-				string query = "update TableColaboradores set ColNome='"+ColNome.Text+"',ColSenha='"+ColSenha.Text+"',ColTelefone='"+ColTelefone.Text+"' where ColId = "+ColId.Text+";";
+				string query = "update TableColaboradores set ColNome='" + ColNome.Text + "',ColSenha='" + ColSenha.Text + "',ColTelefone='" + ColTelefone.Text + "' where ColId = " + ColId.Text + ";";
 				SqlCommand cmd = new SqlCommand(query, Con);
 				cmd.ExecuteNonQuery();
 				MessageBox.Show("Colaborador atualizado com sucesso");
 				Con.Close();
 				popular();
 			}
+		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			Frm_Principal main = new Frm_Principal();
+			main.Show();
 		}
 	}
 }

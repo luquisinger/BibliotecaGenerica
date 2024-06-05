@@ -107,6 +107,7 @@
 			button4.TabIndex = 46;
 			button4.Text = "Início";
 			button4.UseVisualStyleBackColor = false;
+			button4.Click += button4_Click;
 			// 
 			// button3
 			// 
