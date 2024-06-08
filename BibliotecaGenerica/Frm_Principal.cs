@@ -45,8 +45,15 @@ namespace BibliotecaGenerica
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			Frm_LivrosAtrasados livrosAtrasados = new Frm_LivrosAtrasados();
+			Frm_LivrosEmprestados livrosAtrasados = new Frm_LivrosEmprestados();
 			livrosAtrasados.Show();
+			this.Hide();
+		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			Frm_LivrosRetornados livrosR = new Frm_LivrosRetornados();
+			livrosR.Show();
 			this.Hide();
 		}
 	}

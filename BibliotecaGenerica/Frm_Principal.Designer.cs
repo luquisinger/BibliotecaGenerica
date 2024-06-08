@@ -146,7 +146,7 @@
 			button1.FlatStyle = FlatStyle.Flat;
 			button1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
 			button1.ForeColor = SystemColors.ButtonFace;
-			button1.Location = new Point(326, 34);
+			button1.Location = new Point(306, 34);
 			button1.Name = "button1";
 			button1.Size = new Size(103, 27);
 			button1.TabIndex = 4;
@@ -160,7 +160,7 @@
 			button2.FlatStyle = FlatStyle.Flat;
 			button2.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
 			button2.ForeColor = SystemColors.ButtonFace;
-			button2.Location = new Point(435, 34);
+			button2.Location = new Point(415, 34);
 			button2.Name = "button2";
 			button2.Size = new Size(52, 27);
 			button2.TabIndex = 5;
@@ -174,11 +174,11 @@
 			button3.FlatStyle = FlatStyle.Flat;
 			button3.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
 			button3.ForeColor = SystemColors.ButtonFace;
-			button3.Location = new Point(493, 34);
+			button3.Location = new Point(473, 34);
 			button3.Name = "button3";
-			button3.Size = new Size(121, 27);
+			button3.Size = new Size(152, 27);
 			button3.TabIndex = 6;
-			button3.Text = "Livros Atrasados";
+			button3.Text = "Livros Emprestados";
 			button3.UseVisualStyleBackColor = true;
 			button3.Click += button3_Click;
 			// 
@@ -194,6 +194,7 @@
 			button4.TabIndex = 7;
 			button4.Text = "Livros Devolvidos";
 			button4.UseVisualStyleBackColor = true;
+			button4.Click += button4_Click;
 			// 
 			// button5
 			// 

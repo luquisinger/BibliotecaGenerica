@@ -17,7 +17,7 @@ namespace BibliotecaGenerica
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			ApplicationConfiguration.Initialize();
-			Application.Run(new Frm_LivrosAtrasados());
+			Application.Run(new Frm_LivrosRetornados());
 		}
 	}
 }
