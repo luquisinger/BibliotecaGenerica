@@ -52,7 +52,7 @@ namespace BibliotecaGenerica
 
 		private void button4_Click(object sender, EventArgs e)
 		{
-			Frm_LivrosRetornados livrosR = new Frm_LivrosRetornados();
+			Frm_LivrosDevolvidos livrosR = new Frm_LivrosDevolvidos();
 			livrosR.Show();
 			this.Hide();
 		}
