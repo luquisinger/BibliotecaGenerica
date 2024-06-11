@@ -44,11 +44,9 @@
 			pictureBox1 = new PictureBox();
 			LivrosEmprestadosDGV = new DataGridView();
 			DataEmprestada = new DateTimePicker();
-			LivroCb = new ComboBox();
 			AlnTelTb = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			label7 = new Label();
 			Usn = new Label();
-			AlnIdTb = new ComboBox();
 			label5 = new Label();
 			AlnDepTb = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			label4 = new Label();
@@ -66,6 +64,8 @@
 			button2 = new Button();
 			button4 = new Button();
 			button1 = new Button();
+			LivroCb = new ComboBox();
+			AlnIdTb = new MaterialSkin.Controls.MaterialSingleLineTextField();
 			panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			((System.ComponentModel.ISupportInitialize)LivrosEmprestadosDGV).BeginInit();
@@ -178,15 +178,6 @@
 			DataEmprestada.Size = new Size(181, 23);
 			DataEmprestada.TabIndex = 57;
 			// 
-			// LivroCb
-			// 
-			LivroCb.FormattingEnabled = true;
-			LivroCb.Items.AddRange(new object[] { "1\t", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-			LivroCb.Location = new Point(133, 324);
-			LivroCb.Name = "LivroCb";
-			LivroCb.Size = new Size(181, 23);
-			LivroCb.TabIndex = 55;
-			// 
 			// AlnTelTb
 			// 
 			AlnTelTb.Depth = 0;
@@ -227,15 +218,6 @@
 			Usn.Size = new Size(88, 22);
 			Usn.TabIndex = 52;
 			Usn.Text = "Aluno ID";
-			// 
-			// AlnIdTb
-			// 
-			AlnIdTb.FormattingEnabled = true;
-			AlnIdTb.Items.AddRange(new object[] { "1\t", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-			AlnIdTb.Location = new Point(133, 250);
-			AlnIdTb.Name = "AlnIdTb";
-			AlnIdTb.Size = new Size(40, 23);
-			AlnIdTb.TabIndex = 51;
 			// 
 			// label5
 			// 
@@ -494,11 +476,38 @@
 			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
+			// LivroCb
+			// 
+			LivroCb.FormattingEnabled = true;
+			LivroCb.Items.AddRange(new object[] { "1\t", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
+			LivroCb.Location = new Point(133, 324);
+			LivroCb.Name = "LivroCb";
+			LivroCb.Size = new Size(181, 23);
+			LivroCb.TabIndex = 55;
+			// 
+			// AlnIdTb
+			// 
+			AlnIdTb.Depth = 0;
+			AlnIdTb.Hint = "";
+			AlnIdTb.Location = new Point(132, 259);
+			AlnIdTb.MaxLength = 32767;
+			AlnIdTb.MouseState = MaterialSkin.MouseState.HOVER;
+			AlnIdTb.Name = "AlnIdTb";
+			AlnIdTb.PasswordChar = '\0';
+			AlnIdTb.SelectedText = "";
+			AlnIdTb.SelectionLength = 0;
+			AlnIdTb.SelectionStart = 0;
+			AlnIdTb.Size = new Size(43, 23);
+			AlnIdTb.TabIndex = 74;
+			AlnIdTb.TabStop = false;
+			AlnIdTb.UseSystemPasswordChar = false;
+			// 
 			// Frm_LivrosDevolvidos
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(976, 647);
+			Controls.Add(AlnIdTb);
 			Controls.Add(button4);
 			Controls.Add(button1);
 			Controls.Add(button3);
@@ -515,7 +524,6 @@
 			Controls.Add(AlnTelTb);
 			Controls.Add(label7);
 			Controls.Add(Usn);
-			Controls.Add(AlnIdTb);
 			Controls.Add(label5);
 			Controls.Add(AlnDepTb);
 			Controls.Add(label4);
@@ -526,6 +534,7 @@
 			Controls.Add(panel1);
 			FormBorderStyle = FormBorderStyle.None;
 			Name = "Frm_LivrosDevolvidos";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Frm_LivrosRetornados";
 			Load += Frm_LivrosRetornados_Load;
 			panel1.ResumeLayout(false);
@@ -545,11 +554,9 @@
 		private PictureBox pictureBox1;
 		public DataGridView LivrosEmprestadosDGV;
 		private DateTimePicker DataEmprestada;
-		private ComboBox LivroCb;
 		private MaterialSkin.Controls.MaterialSingleLineTextField AlnTelTb;
 		private Label label7;
 		private Label Usn;
-		private ComboBox AlnIdTb;
 		private Label label5;
 		private MaterialSkin.Controls.MaterialSingleLineTextField AlnDepTb;
 		private Label label4;
@@ -567,5 +574,7 @@
 		private Button button2;
 		private Button button4;
 		private Button button1;
+		private ComboBox LivroCb;
+		private MaterialSkin.Controls.MaterialSingleLineTextField AlnIdTb;
 	}
 }
