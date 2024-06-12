@@ -430,6 +430,7 @@
 			Controls.Add(panel1);
 			FormBorderStyle = FormBorderStyle.None;
 			Name = "Frm_LivrosEmprestados";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Frm_LivrosAtrasados";
 			Load += Frm_LivrosAtrasados_Load;
 			panel1.ResumeLayout(false);

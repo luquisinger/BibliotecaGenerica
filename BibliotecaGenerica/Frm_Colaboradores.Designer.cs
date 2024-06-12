@@ -366,6 +366,7 @@
 			Controls.Add(ColId);
 			FormBorderStyle = FormBorderStyle.None;
 			Name = "Frm_Colaboradores";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Frm_Colaboradores";
 			Load += Frm_Colaboradores_Load;
 			((System.ComponentModel.ISupportInitialize)ColaboradorDGV).EndInit();

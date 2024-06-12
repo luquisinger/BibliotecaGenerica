@@ -402,6 +402,7 @@
 			Controls.Add(panel1);
 			FormBorderStyle = FormBorderStyle.None;
 			Name = "Livros";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Livros";
 			Load += Livros_Load;
 			panel1.ResumeLayout(false);

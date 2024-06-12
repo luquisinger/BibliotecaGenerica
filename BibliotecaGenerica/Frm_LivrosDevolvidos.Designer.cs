@@ -38,6 +38,7 @@
 			DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
 			DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
 			DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_LivrosDevolvidos));
 			panel1 = new Panel();
 			label2 = new Label();
 			label1 = new Label();
@@ -66,10 +67,16 @@
 			button1 = new Button();
 			LivroCb = new ComboBox();
 			AlnIdTb = new MaterialSkin.Controls.MaterialSingleLineTextField();
+			panel3 = new Panel();
+			pictureBox6 = new PictureBox();
+			printDocument1 = new System.Drawing.Printing.PrintDocument();
+			printPreviewDialog1 = new PrintPreviewDialog();
 			panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			((System.ComponentModel.ISupportInitialize)LivrosEmprestadosDGV).BeginInit();
 			((System.ComponentModel.ISupportInitialize)LivrosDevolvidosDGV).BeginInit();
+			panel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
 			SuspendLayout();
 			// 
 			// panel1
@@ -428,7 +435,7 @@
 			button3.FlatAppearance.BorderSize = 0;
 			button3.FlatStyle = FlatStyle.Flat;
 			button3.Font = new Font("Book Antiqua", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			button3.Location = new Point(767, 607);
+			button3.Location = new Point(770, 603);
 			button3.Name = "button3";
 			button3.Size = new Size(94, 28);
 			button3.TabIndex = 70;
@@ -441,12 +448,13 @@
 			button2.FlatAppearance.BorderSize = 0;
 			button2.FlatStyle = FlatStyle.Flat;
 			button2.Font = new Font("Book Antiqua", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			button2.Location = new Point(462, 607);
+			button2.Location = new Point(463, 603);
 			button2.Name = "button2";
 			button2.Size = new Size(94, 28);
 			button2.TabIndex = 69;
 			button2.Text = "Imprimir";
 			button2.UseVisualStyleBackColor = false;
+			button2.Click += button2_Click;
 			// 
 			// button4
 			// 
@@ -502,11 +510,49 @@
 			AlnIdTb.TabStop = false;
 			AlnIdTb.UseSystemPasswordChar = false;
 			// 
+			// panel3
+			// 
+			panel3.BackColor = Color.FromArgb(128, 64, 0);
+			panel3.Controls.Add(pictureBox6);
+			panel3.Dock = DockStyle.Bottom;
+			panel3.Location = new Point(0, 648);
+			panel3.Margin = new Padding(4, 3, 4, 3);
+			panel3.Name = "panel3";
+			panel3.Size = new Size(976, 10);
+			panel3.TabIndex = 75;
+			// 
+			// pictureBox6
+			// 
+			pictureBox6.Image = Properties.Resources.icons8_excluir_120;
+			pictureBox6.Location = new Point(921, 12);
+			pictureBox6.Margin = new Padding(4, 3, 4, 3);
+			pictureBox6.Name = "pictureBox6";
+			pictureBox6.Size = new Size(42, 27);
+			pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+			pictureBox6.TabIndex = 0;
+			pictureBox6.TabStop = false;
+			// 
+			// printDocument1
+			// 
+			printDocument1.PrintPage += printDocument1_PrintPage;
+			// 
+			// printPreviewDialog1
+			// 
+			printPreviewDialog1.AutoScrollMargin = new Size(0, 0);
+			printPreviewDialog1.AutoScrollMinSize = new Size(0, 0);
+			printPreviewDialog1.ClientSize = new Size(400, 300);
+			printPreviewDialog1.Document = printDocument1;
+			printPreviewDialog1.Enabled = true;
+			printPreviewDialog1.Icon = (Icon)resources.GetObject("printPreviewDialog1.Icon");
+			printPreviewDialog1.Name = "printPreviewDialog1";
+			printPreviewDialog1.Visible = false;
+			// 
 			// Frm_LivrosDevolvidos
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(976, 647);
+			ClientSize = new Size(976, 658);
+			Controls.Add(panel3);
 			Controls.Add(AlnIdTb);
 			Controls.Add(button4);
 			Controls.Add(button1);
@@ -542,6 +588,8 @@
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			((System.ComponentModel.ISupportInitialize)LivrosEmprestadosDGV).EndInit();
 			((System.ComponentModel.ISupportInitialize)LivrosDevolvidosDGV).EndInit();
+			panel3.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -576,5 +624,9 @@
 		private Button button1;
 		private ComboBox LivroCb;
 		private MaterialSkin.Controls.MaterialSingleLineTextField AlnIdTb;
+		private Panel panel3;
+		private PictureBox pictureBox6;
+		private System.Drawing.Printing.PrintDocument printDocument1;
+		private PrintPreviewDialog printPreviewDialog1;
 	}
 }

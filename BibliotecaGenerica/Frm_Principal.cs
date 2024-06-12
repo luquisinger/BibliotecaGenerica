@@ -56,5 +56,25 @@ namespace BibliotecaGenerica
 			livrosR.Show();
 			this.Hide();
 		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+			SobreNos sn = new SobreNos();
+			sn.Show();
+			this.Hide();
+		}
+
+		private void button7_Click(object sender, EventArgs e)
+		{
+			DashBord db = new DashBord();
+			db.Show();
+			this.Hide();
+		}
+
+		private void button8_Click(object sender, EventArgs e)
+		{
+			Frm_Dicas frm_Dicas = new Frm_Dicas();
+			frm_Dicas.Show();
+		}
 	}
 }

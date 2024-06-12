@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace BibliotecaGenerica
 {
-	public partial class SobreNos : Form
+	public partial class Frm_Dicas : Form
 	{
-		public SobreNos()
+		public Frm_Dicas()
 		{
 			InitializeComponent();
 		}
 
-		private void pictureBox1_Click(object sender, EventArgs e)
+		private void pictureBox2_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			Frm_Principal main = new Frm_Principal();
-			main.Show();
 		}
-
 	}
 }
